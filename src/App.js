@@ -1,25 +1,68 @@
-import logo from './logo.svg';
-import './App.css';
+// import React from "react";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import { Routes, Route, useRoutes } from "react-router-dom";
+// import HeaderSection from "./Components/Header/Header";
+// import LandingSection from "./Components/Landing/Landing";
+// import CoursesSection from "./Components/Courses/Courses";
+// import RoadMapSection from "./Components/Roadmap/RoadMap";
+// import HelpSection from "./Components/Help/Help";
+// import NewCoursesSection from "./Components/NewCourses/NewCourses";
+// import ArticleSection from "./Components/Article/Article";
+// import InstagramSection from "./Components/Instagram/Instagram";
+// import PishForoushSection from "./Components/PishForoush/PishForoush";
+// import PopularCoursesSection from "./Components/PopularCourses/PopularCourses";
+// import FooterSection from "./Components/Footer/Footer";
+// import route from "./route";
 
-function App() {
+
+// export default function App() {
+
+//   let router = useRoutes(route)
+
+//   return (
+//     <div>
+//       <HeaderSection></HeaderSection>
+//       {router}
+//       <LandingSection></LandingSection>
+//       <CoursesSection></CoursesSection>
+//       <RoadMapSection></RoadMapSection>
+//       <HelpSection></HelpSection>
+//       <NewCoursesSection></NewCoursesSection>
+//       <ArticleSection></ArticleSection>
+//       <InstagramSection></InstagramSection>
+//       <PishForoushSection></PishForoushSection>
+//       <PopularCoursesSection></PopularCoursesSection>
+//       <FooterSection></FooterSection>
+//     </div>
+//   );
+// }
+
+
+
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Routes, Route, useRoutes } from "react-router-dom";
+import HeaderSection from "./Components/Header/Header";
+import LandingSection from "./Components/Landing/Landing";
+import CoursesSection from "./Components/Courses/Courses";
+import RoadMapSection from "./Components/Roadmap/RoadMap";
+import HelpSection from "./Components/Help/Help";
+import NewCoursesSection from "./Components/NewCourses/NewCourses";
+import ArticleSection from "./Components/Article/Article";
+import InstagramSection from "./Components/Instagram/Instagram";
+import PishForoushSection from "./Components/PishForoush/PishForoush";
+import PopularCoursesSection from "./Components/PopularCourses/PopularCourses";
+import FooterSection from "./Components/Footer/Footer";
+import route from "./route";
+
+
+export default function App() {
+
+  let router = useRoutes(route)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {router}
     </div>
   );
 }
-
-export default App;

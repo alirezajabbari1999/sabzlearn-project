@@ -1,0 +1,97 @@
+.article-container {
+  background-color: #f3f4f6;
+  /* padding: 10rem 0; */
+}
+
+.article-container .col {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.article-container .article-card {
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 1.7rem;
+  overflow: hidden;
+}
+
+.article-container .article-card .image-box {
+  position: relative;
+}
+
+.article-container .article-card .image-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ffffff00, #ffffff);
+  z-index: 1;
+}
+
+.article-container .article-card .image-box img {
+  width: 100%;
+  z-index: 2;
+}
+
+.article-container .article-card .desc-box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.article-container .article-card .desc-box h4 {
+}
+
+.article-container .article-card .desc-box p {
+  text-align: justify;
+  font-size: 1.3rem;
+  color: #999;
+  margin-top: 1.5rem;
+}
+
+.article-container .article-card .desc-box .date-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+}
+
+.article-container .article-card .desc-box .date-box .teacher-name {
+  font-size: 1.2rem;
+  color: #999;
+  display: flex;
+  align-items: center
+}
+
+.article-container .article-card .desc-box .date-box .date {
+  font-size: 1.2rem;
+  color: #999;
+  display: flex;
+  align-items: center
+}
+
+.article-container .article-card .article-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.article-container .article-card .article-link .link-btn {
+  text-decoration: none;
+  color: #000;
+  gap: 1rem;
+  transition: all .2s;
+}
+
+.article-container .article-card .article-link .link-btn:hover {
+  color: #2ed573;
+}
+
+.article-container .article-card .article-link .link-btn .arrow {
+  margin-right: .5rem;
+}

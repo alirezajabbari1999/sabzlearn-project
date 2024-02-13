@@ -1,0 +1,132 @@
+.frontend-container {
+  padding: 5rem 0;
+  background-color: #f3f4f6;
+}
+
+.frontend-title {
+  text-align: center;
+  font-size: 4rem;
+  margin: 2rem 0 12rem;
+}
+
+.frontend-title-span {
+  background-color: #f43f5e;
+  width: 2.5rem;
+  height: 0.7rem;
+  display: inline-block;
+  margin-bottom: .3rem;
+  margin-left: .5rem;
+  border-radius: .5rem;
+}
+
+.frontend-layout-right {
+  position: sticky;
+  top: 0;
+}
+
+.frontend-layout-right .frontend-sort{
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.frontend-layout-right .frontend-sort .search-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1.9rem 1rem;
+  border-radius: 1rem;
+}
+
+.frontend-layout-right .frontend-sort .search-box input{
+  width: 75%;
+  border: none;
+  outline: none;
+}
+
+.frontend-layout-right .frontend-sort .toggle-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.frontend-layout-right .frontend-sort .toggle-box .side-button-box {
+  width: 4rem;
+  height: 2rem;
+  background-color: #e5e7eb;
+  border-radius: 1.5rem;
+  position: relative;
+}
+
+.frontend-layout-right .frontend-sort .toggle-box .side-button-box .circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: .3rem;
+  right: .3rem;
+  transition: all .3s;
+}
+
+.frontend-layout-right .toggle-box .side-button-box.active .circle {
+  right: 2.1rem;
+  cursor: pointer;
+}
+
+.frontend-layout-right .toggle-box .side-button-box.active {
+  background-color: #0ea5e9;
+}
+
+.frontent-course-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.filter-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 1.5rem 3rem;
+  border-radius: 1.5rem;
+}
+
+.frontend-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  list-style: none;
+}
+
+.frontend-menu li {
+  text-decoration: none;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.frontend-menu li a {
+}
+
+@media screen and (max-width: 990px) {
+  .frontent-course-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filter-box{
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .frontent-course-box {
+    grid-template-columns: 1fr;
+  }
+}

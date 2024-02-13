@@ -1,0 +1,39 @@
+.road-map-container{
+ background-color: #f3f4f6;
+}
+
+.road-map-container .row{
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.road-map-container .col{
+  padding: 3rem 5rem;
+  border-radius: 1.8rem;
+}
+
+.road-map-container .col .link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .road-map-container .col{
+    width: 22%;
+  }
+
+  .road-map-container .row{
+    justify-content: center;
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .road-map-container .row{
+    justify-content: center;
+
+  }
+}

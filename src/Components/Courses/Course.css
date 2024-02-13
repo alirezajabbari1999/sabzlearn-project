@@ -1,0 +1,100 @@
+.course-card{
+  /* width: 30rem; */
+  background-color: #fff;
+  border-radius: 1.7rem;
+  overflow: hidden;
+  margin: 1rem 0;
+  /* min-height: 40rem; */
+  max-height: 40rem;
+}
+
+.course-card .card-image-box{
+  border-radius: 1.7rem;
+  overflow: hidden;
+}
+
+.course-card .card-image-box img{
+  width: 100%;
+}
+
+.course-card .card-info{
+  padding: .5rem 2rem ;
+}
+
+.course-card .card-info .card-tag1{
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #e6f6fd;
+  color: #0ea5e9;
+  padding: .3rem;
+  border-radius: .3rem;
+  display: inline-block;
+  margin: .7rem .2rem;
+}
+
+.course-card .card-info .card-title{
+  margin-bottom: 1rem;
+  /* white-space: nowrap; */
+  /* padding: 0 2rem; */
+}
+
+.course-card .card-info .card-desc{
+  color: #7e8d8b;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.course-card .card-info .card-teacher{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .7rem;
+}
+
+.course-card .card-info .card-teacher .right-side{
+  display: flex;
+  gap: 1rem;
+}
+
+.course-card .card-info .card-teacher .right-side p{
+  font-size: 1.3rem;
+  color: #7e8d8b;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  margin-bottom: 0;
+}
+
+.course-card .card-info .card-teacher .right-side span{
+  font-size: 1.3rem;
+  color: #7e8d8b;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.course-card .card-info .card-teacher .left-side{
+  color: gold;
+  display: flex;
+  align-items: center;
+}
+
+.course-card .card-info .card-teacher .left-side span{
+  font-size: 1.5rem;
+}
+
+.course-card .card-info .card-price{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #6666662b;
+  padding-top: .8rem;
+} 
+
+.course-card .card-info .card-price .user-number{
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.course-card .card-info .card-price .price{
+  color: #2ed573;
+} 
